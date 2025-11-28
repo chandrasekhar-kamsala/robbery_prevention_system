@@ -75,68 +75,54 @@ WEAPONDETECTION/
 
 ---
 
-## 📦 Installation
+# Robbery Prevention System - Setup Guide
 
-### 1️⃣ Clone the Repository  
-git clone https://github.com/<your-username>/Robbery-Prevention-System.git
-cd Robbery-Prevention-System
-2️⃣ Install Dependencies
-pip install -r requirements.txt
+📦 **Installation**
+steps:
+  - **Clone the Repository**
+    command: |
+      git clone https://github.com/your-username/Robbery-Prevention-System.git
+      cd Robbery-Prevention-System
+  - **Install Dependencies**
+    command: "pip install -r requirements.txt"
+  - **Add Your YOLOv8 Weights**
+    instructions: "Place your trained YOLO model file in the project root directory"
+    file: "weapon_yolov8.pt"
 
-3️⃣ Add Your YOLOv8 Weights
+▶️ **Usage**
+start_system: "python main.py"
+controls:
+  - **Start System**: "Starts webcam/video detection"
+  - **Stop System**: "Stops detection"
+  - **Live Logs**: "Shows real-time alerts"
+  - **Power Alerts**: "Displays outage, fluctuation, OK statuses"
 
-Place your file:
+⚙️ **Configuration**
+config_file: "config.json"
+settings:
+  use_webcam: false
+  video_path: "test_video.mp4"
+  confidence_threshold: 0.45
+  email_sender: "your_email@gmail.com"
+  email_receiver: "receiver@gmail.com"
 
-weapon_yolov8.pt
+📬 **Email Alert Setup**
+steps:
+  - "Enable Gmail App Passwords"
+  - "Replace credentials in config.json"
+  - "Ensure your sender email has 2FA enabled"
 
+🤖 **YOLOv8 Model**
+description: "This project uses your custom-trained model"
+file: "weapon_yolov8.pt"
+note: "You can replace it anytime with a newer YOLOv8 weight file"
 
-in the project directory.
+📚 **Future Enhancements**
+  - "Cloud-based analytics dashboard"
+  - "Multi-camera support"
+  - "SMS/WhatsApp alert system"
+  - "Raspberry Pi deployment"
+  - "CCTV DVR/NVR pipeline integration"
 
-▶️ Usage
-Start the system:
-python main.py
-
-Controls (from GUI):
-Button	Function
-Start System	Starts webcam/video detection
-Stop System	Stops detection
-Live Logs	Shows real-time alerts
-Power Alerts	Displays outage, fluctuation, OK
-⚙️ Configuration
-
-Edit config.json:
-
-{
-  "use_webcam": false,
-  "video_path": "test_video.mp4",
-  "confidence_threshold": 0.45,
-  "email_sender": "your_email@gmail.com",
-  "email_receiver": "receiver@gmail.com"
-}
-
-📬 Email Alert Setup
-
-Enable Gmail’s App Password and update config.json.
-
-🤖 YOLOv8 Model
-
-The project uses your trained model:
-
-weapon_yolov8.pt
-
-
-Replace anytime with newer weights.
-
-📚 Future Enhancements
-
-Cloud-based dashboard
-
-Multi-camera support
-
-SMS alerts
-
-Raspberry Pi deployment
-
-⭐ Show Your Support
-
-Give this repo a ⭐ if you like this project!
+⭐ **Show Your Support**
+message: "If this project helped you or impressed you, consider giving it a ⭐ on GitHub! 🙌"
