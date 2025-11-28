@@ -1,0 +1,8 @@
+{
+  "model_path": "weapon_yolov8.pt",
+  "camera_index": "test_video.mp4",
+  "alert_mode": "email", 
+  "alert_email": "nanikamsala2005@gmail.com",
+  "power_check_interval": 10,
+  "confidence_threshold": 0.4
+}
